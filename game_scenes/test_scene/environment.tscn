@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://f3jg5e7sh6j"]
+
+[ext_resource type="PackedScene" uid="uid://cd7m1pi00vs1v" path="res://room_parts/placeholder_ground/ground.tscn" id="1_j3jwa"]
+
+[node name="Environment" type="Node2D"]
+
+[node name="Ground" parent="." instance=ExtResource("1_j3jwa")]

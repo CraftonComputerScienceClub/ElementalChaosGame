@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd7m1pi00vs1v"]
+
+[ext_resource type="Texture2D" uid="uid://dhn7o4toct82o" path="res://room_parts/placeholder_ground/ground_1.png" id="1_qjifb"]
+[ext_resource type="PackedScene" uid="uid://by0ycy0foyewo" path="res://room_parts/placeholder_collider/collider.tscn" id="2_elxu7"]
+
+[node name="Ground" type="Sprite2D"]
+position = Vector2(580, 373)
+texture = ExtResource("1_qjifb")
+
+[node name="Collider" parent="." instance=ExtResource("2_elxu7")]

@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://c4v8akoxnlo4x"]
+
+[ext_resource type="Script" path="res://Enemy/TestEnemy.gd" id="1_s1a7e"]
+[ext_resource type="Texture2D" uid="uid://dqkg0qey1ucub" path="res://entities/player/Player_temp_sprite.png" id="2_1ebrs"]
+[ext_resource type="PackedScene" uid="uid://dljrfxoshkeul" path="res://components/health_component/health_component.tscn" id="3_150b6"]
+[ext_resource type="PackedScene" uid="uid://cdtvnbkryh6ut" path="res://components/hitbox_component/hitbox_component.tscn" id="4_acjak"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b6iko"]
+size = Vector2(4, 4)
+
+[node name="TestEnemy" type="AnimatableBody2D"]
+modulate = Color(0.906866, 0, 0.183087, 1)
+script = ExtResource("1_s1a7e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 1, 1)
+texture = ExtResource("2_1ebrs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_b6iko")
+
+[node name="HealthComponent" parent="." instance=ExtResource("3_150b6")]
+
+[node name="HitboxComponent" parent="." instance=ExtResource("4_acjak")]
+script = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
+visible = false
+shape = SubResource("RectangleShape2D_b6iko")
+
+[connection signal="Health_depleted" from="HealthComponent" to="." method="_on_health_component_health_depleted"]
+[connection signal="area_entered" from="HitboxComponent" to="HealthComponent" method="_on_hitbox_component_area_entered"]

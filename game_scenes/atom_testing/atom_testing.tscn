@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://kh6odwo6c4qw"]
+
+[ext_resource type="PackedScene" uid="uid://dy253gw34wi3r" path="res://components/atom_collector/atom_collector.tscn" id="1_7aofq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AtomCollector" parent="." instance=ExtResource("1_7aofq")]
