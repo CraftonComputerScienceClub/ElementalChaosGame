@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvrofy6dmmlq7"]
+
+[ext_resource type="Script" path="res://components/gun_loop/gun_loop_script.gd" id="1_kkrd4"]
+
+[node name="Gun_Loop" type="Node2D"]
+script = ExtResource("1_kkrd4")

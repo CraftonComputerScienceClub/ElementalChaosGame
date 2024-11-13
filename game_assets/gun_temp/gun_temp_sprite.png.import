@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cey51hrfq1drc"
-path="res://.godot/imported/temp_bullet.png-abcc87e152fc5e423dfbe7490a600b42.ctex"
+uid="uid://bayfy6nsdxpch"
+path="res://.godot/imported/gun_temp_sprite.png-c32cdccdb19516680df435ad82e5b40a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game_assets/bullet_temp/temp_bullet.png"
-dest_files=["res://.godot/imported/temp_bullet.png-abcc87e152fc5e423dfbe7490a600b42.ctex"]
+source_file="res://game_assets/gun_temp/gun_temp_sprite.png"
+dest_files=["res://.godot/imported/gun_temp_sprite.png-c32cdccdb19516680df435ad82e5b40a.ctex"]
 
 [params]
 

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl7rtjmyxxm0l"]
+
+[ext_resource type="Script" path="res://components/base_gun/base_gun_script.gd" id="1_agbfi"]
+[ext_resource type="Texture2D" uid="uid://bayfy6nsdxpch" path="res://game_assets/gun_temp/gun_temp_sprite.png" id="2_kooht"]
+
+[node name="Base_Gun" type="Node2D"]
+script = ExtResource("1_agbfi")
+
+[node name="Gun_Barrel_Inner" type="Marker2D" parent="."]
+position = Vector2(50, 0)
+
+[node name="Gun_Barrel_Outer" type="Marker2D" parent="."]
+position = Vector2(100, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(36, -4)
+scale = Vector2(5.91667, 5.5)
+texture = ExtResource("2_kooht")
